@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
+}
+
+body {
+	background: linear-gradient(135deg, #dbeffe, #f5f9ff);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	padding: 20px;
+	color: #34495e;
+}
+
+.card {
+	background: #ffffff;
+	border-radius: 18px;
+	box-shadow: 0 12px 25px rgba(46, 134, 222, 0.25);
+	padding: 40px 35px;
+	width: 100%;
+	max-width: 420px;
+	text-align: center;
+	transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+	box-shadow: 0 18px 40px rgba(46, 134, 222, 0.35);
+}
+
+h1 {
+	font-weight: 600;
+	font-size: 2.2rem;
+	color: #2c3e50;
+	margin-bottom: 25px;
+	letter-spacing: 1.2px;
+}
+
+p {
+	font-weight: 400;
+	font-size: 1.1rem;
+	margin-bottom: 30px;
+	color: #5d6d7e;
+}
+
+.controls {
+	display: flex;
+	flex-direction: column;
+	gap: 18px;
+	margin-bottom: 35px;
+}
+
+select#timezone {
+	padding: 14px 20px;
+	font-size: 1.1rem;
+	border-radius: 12px;
+	border: 2px solid #2e86de;
+	background: white;
+	color: #2c3e50;
+	cursor: pointer;
+	box-shadow: 0 3px 15px rgba(46, 134, 222, 0.15);
+	appearance: none;
+	background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20width%3D'14'%20height%3D'14'%20viewBox%3D'0%200%2014%2014'%20fill%3D'none'%20xmlns%3D'http%3A//www.w3.org/2000/svg'%3E%3Cpath%20d%3D'M4%205.5L7%208.5L10%205.5'%20stroke%3D'%232c3e50'%20stroke-width%3D'2'%20stroke-linecap%3D'round'%20stroke-linejoin%3D'round'/%3E%3C/svg%3E");
+	background-repeat: no-repeat;
+	background-position: right 18px center;
+	background-size: 14px 14px;
+	transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+select#timezone:hover,
+select#timezone:focus {
+	border-color: #1b4f72;
+	box-shadow: 0 5px 20px rgba(27, 79, 114, 0.3);
+	outline: none;
+}
+
+button {
+	background: linear-gradient(45deg, #2e86de, #1b4f72);
+	color: #fff;
+	border: none;
+	border-radius: 14px;
+	padding: 14px 0;
+	font-size: 1.2rem;
+	font-weight: 600;
+	cursor: pointer;
+	box-shadow: 0 6px 18px rgba(46, 134, 222, 0.4);
+	transition: background 0.35s ease, transform 0.25s ease, box-shadow 0.3s ease;
+	user-select: none;
+}
+
+button:hover {
+	background: linear-gradient(45deg, #1b4f72, #2e86de);
+	transform: scale(1.08);
+	box-shadow: 0 9px 25px rgba(27, 79, 114, 0.6);
+}
+
+button:active {
+	transform: scale(0.97);
+	box-shadow: 0 4px 12px rgba(27, 79, 114, 0.5);
+}
+
+.output {
+	font-weight: 500;
+	font-size: 1.1rem;
+	color: #34495e;
+	min-height: 70px;
+	padding: 18px 20px;
+	border-radius: 15px;
+	background: #eaf2f8;
+	box-shadow: inset 0 0 15px rgba(46, 134, 222, 0.1);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}

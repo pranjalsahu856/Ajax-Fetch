@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Time Zone Selector</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="card">
+      <h1>Time Zone Selector</h1>
+      <p>Select your timezone from the dropdown and click Show Time</p>
+
+      <div class="controls">
+        <select id="timezone">
+          <option value="Asia/Kolkata">Asia/Kolkata</option>
+          <option value="America/New_York">America/New_York</option>
+          <option value="Europe/London">Europe/London</option>
+          <option value="Asia/Tokyo">Asia/Tokyo</option>
+          <option value="Australia/Sydney">Australia/Sydney</option>
+          <option value="Europe/Paris">Europe/Paris</option>
+          <option value="America/Los_Angeles">America/Los_Angeles</option>
+        </select>
+        <button>Show Time</button>
+      </div>
+
+      <div id="currentdatetime" class="output"></div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
